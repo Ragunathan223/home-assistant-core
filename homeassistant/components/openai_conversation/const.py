@@ -2,10 +2,14 @@
 
 import logging
 
+from homeassistant.const import CONF_LLM_HASS_API
+from homeassistant.helpers import llm
+
 DOMAIN = "openai_conversation"
 LOGGER: logging.Logger = logging.getLogger(__package__)
 
 DEFAULT_CONVERSATION_NAME = "OpenAI Conversation"
+DEFAULT_AI_TASK_NAME = "OpenAI AI Task"
 DEFAULT_NAME = "OpenAI Conversation"
 
 CONF_CHAT_MODEL = "chat_model"
@@ -52,3 +56,12 @@ WEB_SEARCH_MODELS: list[str] = [
     "gpt-4o-mini",
     "gpt-4o-mini-search-preview",
 ]
+
+RECOMMENDED_CONVERSATION_OPTIONS = {
+    CONF_RECOMMENDED: True,
+    CONF_LLM_HASS_API: [llm.LLM_API_ASSIST],
+    CONF_PROMPT: llm.DEFAULT_INSTRUCTIONS_PROMPT,
+}
+RECOMMENDED_AI_TASK_OPTIONS = {
+    CONF_RECOMMENDED: True,
+}
