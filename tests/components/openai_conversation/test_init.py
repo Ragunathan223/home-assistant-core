@@ -17,8 +17,6 @@ from syrupy.assertion import SnapshotAssertion
 from syrupy.filters import props
 
 from homeassistant.components.openai_conversation import CONF_CHAT_MODEL
-from homeassistant.components.openai_conversation.const import DOMAIN
-from homeassistant.components.openai_conversation import CONF_CHAT_MODEL, CONF_FILENAMES
 from homeassistant.components.openai_conversation.const import (
     DEFAULT_AI_TASK_NAME,
     DOMAIN,

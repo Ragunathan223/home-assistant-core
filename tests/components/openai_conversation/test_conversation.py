@@ -10,7 +10,6 @@ from openai.types.responses import (
     ResponseStreamEvent,
 )
 from openai.types.responses.response import IncompleteDetails
-from openai.types.responses.response_function_web_search import ActionSearch
 import pytest
 from syrupy.assertion import SnapshotAssertion
 

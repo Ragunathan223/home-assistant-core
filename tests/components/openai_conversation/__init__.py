@@ -1,7 +1,5 @@
 """Tests for the OpenAI Conversation integration."""
 
-from openai.types.responses.response_function_web_search import ActionSearch
-
 from openai.types.responses import (
     ResponseContentPartAddedEvent,
     ResponseContentPartDoneEvent,
@@ -21,6 +19,7 @@ from openai.types.responses import (
     ResponseWebSearchCallInProgressEvent,
     ResponseWebSearchCallSearchingEvent,
 )
+from openai.types.responses.response_function_web_search import ActionSearch
 
 
 def create_message_item(
